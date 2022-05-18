@@ -1,6 +1,9 @@
-import { mount } from 'products/ProductIndex'
-import 'cart/CartShow'
+import { mount as mountProduct } from 'products/ProductIndex'
+import { mount as mountCart } from 'cart/CartShow'
 
 console.log("Hello container")
 const productEl = document.getElementById('dev-products')
-mount(productEl)
+mountProduct(productEl)
+
+const cartEl = document.getElementById('dev-cart')
+mountCart(cartEl)
